@@ -1,0 +1,13 @@
+{% extends 'encyclopedia/layout.html' %}
+
+{% block title %}
+    Add
+{% endblock %}
+
+{% block body %}
+    <form action="" class="w-75" method="post">
+        {% csrf_token %}
+        {{ addForm }}
+        <input type="submit" class="btn btn-success mt-2" value="Create">
+    </form>
+{% endblock %}
